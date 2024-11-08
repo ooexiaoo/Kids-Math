@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+  }
+  
+  .game-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .game-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #game-info p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .lives {
+    display: flex;
+    gap: 5px;
+    font-size: 1.5rem;
+    color: #ff4b5c;
+  }
+  
+  #question-container {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  #options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  #options-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  #options-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  #game-over {
+    display: none;
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  
+  #game-over button {
+    background-color: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  #game-over button:hover {
+    background-color: #e84554;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

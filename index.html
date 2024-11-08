@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Math Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="game-title">Math Quiz Game</h1>
+    <div id="game-info">
+      <p>Level: <span id="level">1</span></p>
+      <p>Score: <span id="score">0</span></p>
+      <div id="lives" class="lives">
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+      </div>
+    </div>
+    <div id="question-container">
+      <p id="question">Loading...</p>
+    </div>
+    <div id="options-container"></div>
+    <div id="game-over" class="hidden">
+      <p>Game Over!</p>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+  </div>
+
+  <!-- Sound Effects -->
+  <audio id="correct-sound" src="correct.mp3"></audio>
+  <audio id="wrong-sound" src="wrong.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
